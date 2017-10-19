@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="RWE" duration-ms="145674" started-at="2017-10-19T06:25:13Z" finished-at="2017-10-19T06:27:39Z">
+  <suite name="RWE" duration-ms="135373" started-at="2017-10-19T06:37:50Z" finished-at="2017-10-19T06:40:05Z">
     <groups>
     </groups>
-    <test name="Read Write ExcelSheet" duration-ms="145674" started-at="2017-10-19T06:25:13Z" finished-at="2017-10-19T06:27:39Z">
+    <test name="Read Write ExcelSheet" duration-ms="135373" started-at="2017-10-19T06:37:50Z" finished-at="2017-10-19T06:40:05Z">
       <class name="New.ReadWriteExcel">
-        <test-method status="PASS" signature="TestSetup()[pri:0, instance:New.ReadWriteExcel@58651fd0]" name="TestSetup" is-config="true" duration-ms="138613" started-at="2017-10-19T02:25:13Z" finished-at="2017-10-19T02:27:32Z">
+        <test-method status="PASS" signature="TestSetup()[pri:0, instance:New.ReadWriteExcel@58651fd0]" name="TestSetup" is-config="true" duration-ms="131691" started-at="2017-10-19T02:37:50Z" finished-at="2017-10-19T02:40:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestSetup -->
-        <test-method status="PASS" signature="ReadData()[pri:0, instance:New.ReadWriteExcel@58651fd0]" name="ReadData" duration-ms="6995" started-at="2017-10-19T02:27:32Z" finished-at="2017-10-19T02:27:39Z">
+        <test-method status="PASS" signature="ReadData()[pri:0, instance:New.ReadWriteExcel@58651fd0]" name="ReadData" duration-ms="3665" started-at="2017-10-19T02:40:02Z" finished-at="2017-10-19T02:40:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReadData -->
