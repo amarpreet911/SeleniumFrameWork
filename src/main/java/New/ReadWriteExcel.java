@@ -1,9 +1,5 @@
-package main.java.New;
+package New;
 
-import org.apache.poi.hssf.usermodel.HSSFCell;
-import org.apache.poi.hssf.usermodel.HSSFSheet;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -88,7 +84,7 @@ public class ReadWriteExcel
                 fileOutput.flush();
                 fileOutput.close();
         }catch(Exception e){
-            throw (e);
+           System.out.println("the exception is "+e);
         }
     }
 }
