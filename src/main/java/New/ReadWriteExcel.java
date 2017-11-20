@@ -6,6 +6,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
@@ -32,11 +33,12 @@ public class ReadWriteExcel
     @BeforeTest
     public void TestSetup()
         {
-
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--headless");
             // Set the path of the Firefox driver.
             System.setProperty("webdriver.chrome.driver", "/home/amarpreet911/Documents/Selenium/Selenium_Files/" +
                            "chromedriver");
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(chromeOptions);
             // Enter url.
             driver.get("http://www.linkedin.com/");
     //             driver.manage().window().maximize();
