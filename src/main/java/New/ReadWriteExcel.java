@@ -50,7 +50,7 @@ public class ReadWriteExcel
     @Test
     public void ReadData() throws IOException{
        // Import excel sheet.
-        String src = "/resources/TestData.xls";
+        String src = "src/main/resources/TestData.xls";
        // Load the file.
             XSSFWorkbook srcBook = new XSSFWorkbook(src);
             XSSFSheet sourceSheet = srcBook.getSheetAt(0);
