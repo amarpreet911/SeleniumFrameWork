@@ -50,7 +50,7 @@ public class ReadWriteExcel
     @Test
     public void ReadData() throws IOException{
        // Import excel sheet.
-        String src = "/home/amarpreet911/Documents/Selenium/Selenium_Workspace/SeleniumFrameWork/src/main/resources/TestData.xls";
+        String src = "/resources/TestData.xls";
        // Load the file.
             XSSFWorkbook srcBook = new XSSFWorkbook(src);
             XSSFSheet sourceSheet = srcBook.getSheetAt(0);
@@ -62,7 +62,7 @@ public class ReadWriteExcel
                 cell = sourceSheet.getRow(i).getCell(1);//.getRow(i).getCell(1);
               //  cell.setCellType(Cell.CELL_TYPE_STRING);
                 driver.findElement(By.id("login-email")).sendKeys(cell.getStringCellValue());
-
+                System.out.println("the number of rows column loop for jenkins");
                 // Import data for password.
                 cell = sourceSheet.getRow(i).getCell(2);
              //   cell.setCellType(Cell.CELL_TYPE_STRING);
